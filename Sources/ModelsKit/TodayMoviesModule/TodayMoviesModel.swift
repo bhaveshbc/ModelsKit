@@ -19,7 +19,7 @@ public struct TVShowPageDTO: Decodable {
   }
 }
 
-public struct TVShow2DTO: Decodable, Equatable {
+public struct TVShow2DTO: Decodable, Equatable, Hashable {
   public let id: Int  // 52698
   public let name: String // "El Kabeer"
   public let overview: String // "lorep ipsum ...."
