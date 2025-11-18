@@ -13,7 +13,8 @@ public struct TVShowDetailDTO: Decodable {
         public let createdBy: [CreatedByDTO]
  
         public let genres: [GenreDTO]
- 
+        public let voteAverage: Double?
+        public let voteCount: Int?
         public let lastEpisodeToAir: EpisodeDTO?
         public let name: String?
         public let nextEpisodeToAir: EpisodeDTO?
@@ -31,6 +32,8 @@ public struct TVShowDetailDTO: Decodable {
            case nextEpisodeToAir = "next_episode_to_air"
            case overview
            case tagline
+            case voteAverage = "vote_average"
+            case voteCount = "vote_count"
        }
 
 }
